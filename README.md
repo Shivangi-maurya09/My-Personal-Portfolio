@@ -26,4 +26,4 @@ To view the portfolio, you don't need any server or backend. Simply open the HTM
 1. **Clone the Repository**
    Clone this repository to your local machine using the following command:
    ```bash
-   
+   https://github.com/Shivangi-maurya09/My-Personal-Portfolio.git
