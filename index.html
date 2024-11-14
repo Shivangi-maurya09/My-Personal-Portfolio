@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/23d4f1e1b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo4.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Learning">Learning</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>B.Tech Student</p>
+            <h1>Hi, I'm <span>Shivangi Maurya</span><br>From Gorakhpur, <br>Uttarpradesh, India</h1>
+        </div>
+    </div>
+   </div> 
+   <!-------about------->
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="images/user.png" style="width: 600px; height: 600px;">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Shivangi Maurya, a B.Tech Computer Science student who is passionate and eager to explore and learn new things. I have a strong interest in technology and  I am dedicated to enhancing my skills in software development and web technologies. Although I am new to coding, I am committed to expanding my knowledge through hands-on practice and teamwork.
+                    With an aptitude for research and problem-solving, I thrive in collaborative environments and am always ready to take on new challenges. I am motivated by a desire to grow both personally and professionally, aiming to make meaningful contributions in the tech industry as I advance my career.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br> Python,C,HTML,CSS,JavaScript,DSA
+                            </li>
+                            <li><span>Web Development</span><br> Frontend</li>
+                            <li><span>Collaboration</span><br> Working and managing in team projects</li>
+                            <li><span>Soft skills</span><br>Communication, adapatability, time management
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>  Pursuing B.Tech in Computer Science & Engineering From Deen Dayal Upadhyaya Gorakhpur University </li>
+                            <li><span>CGPA</span><br>7.88 CGPA </li>
+                            <li><span>2022</span><br> Completed Intermediate From Udaya Public School</li>
+                            <li><span>2020</span><br>Completed High School From Udaya Public School</li>
+            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Hackathon Participation</span><br> Participated in two hackathons, where I had the opportunity to work on real-world projects alongside my teammates. These experiences honed my problem-solving and teamwork skills and earned me certificates of participation
+                            </li>
+                            <li><span>Certification</span><br> Successfully completed the Advanced Diploma in Computer Applications (ADCA) course, further strengthening my technical knowledge and proficiency.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-------Learning Journey--------->
+
+   <div id="Learning">
+    <div class="container">
+        <h1 class="sub-title"> My Learning Journey</h1>
+        <div class="Learning-list">
+        <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Expanding my front-end development skills:<br>Currently enhancing my knowledge in HTML, CSS, and JavaScript by building interactive web projects. Exploring advanced concepts in responsive design and web animations.</p>  
+                <a href="#">Learn More</a>
+            </div>
+        
+
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design Principles</h2>
+                <p>Diving into the fundamentals of user interface and user experience design to create aesthetically pleasing and user-friendly applications. Learning design tools and best practices.</p>  
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Full Stack Development Basics</h2>
+                <p>Gaining exposure to backend development:<br>Starting to learn backend technologies such as Node.js and databases like MongoDB to become a full-stack developer and build end-to-end applications.</p>  
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+   </div>
+   <!----------Portfolio------->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png" alt="Image 1">
+                <div class="layer">
+                    <h3>Educational Website</h3>
+                    <p>I worked on an e-learning website as my first project, where I created and implemented the entire frontend. This project involved designing a user-friendly interface using HTML, CSS, and JavaScript to provide an engaging user experience.</br>Key Skills: Frontend Development, HTML, CSS, JavaScript</p>
+                    <a href="https://shivangi-maurya09.github.io/E-Learning-Website" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png" alt="Image 2">
+                <div class="layer">
+                    <h3>School Management System</h3>
+                    <p>Developed a comprehensive school management system with a login feature, allowing management of a school (teachers) to manage students as well as teachers respective data.Utilized Tkinter for the GUI and SQLite for database management.</br>Key Skills:Python, GUI Design, Database Management</p>
+                    <a href="https://github.com/Shivangi-maurya09/My-First-Python-Project/tree/master"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png" alt="Iamge 3">
+                <div class="layer">
+                    <h3>Portfolio Website Development</h3>
+                    <p>This project involved the design and development of my personal portfolio website, which serves as a platform to present my skills, projects, and accomplishments. By working on this project, I gained hands-on experience with web development technologies such as HTML, CSS, and JavaScript.</br>Key Skills:HTMl,CSS& JavaScript</p>
+                    <a href="*#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+   </div>
+   <!------------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>shivangimaurya2005@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shivangi-maurya-598695273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Shivangi-maurya09"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/MyNewresume.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email"  placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Shivangi Maurya.Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }            
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz6H5K-no436D93Vr6chg3Ozaa15PKUCtQajuU_1Mv3kbyyoFOBFVMeRRqyB9i0bo_scQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
